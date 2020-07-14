@@ -1,0 +1,4 @@
+1-Layout oluşturldu.
+2-Partial View oluşturuldu.
+3-Hakkımızda sayfası düzenlendi.
+4-
