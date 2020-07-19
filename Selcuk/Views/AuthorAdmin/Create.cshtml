@@ -12,7 +12,7 @@
                 <h2>
                     Yazar Ekleme Sayfası
                 </h2>
-             </div>
+            </div>
             <div class="body">
                 @using (Html.BeginForm("Create", "AuthorAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
                 {
@@ -46,7 +46,7 @@
                     <label for="password">Şifre</label>
                     <div class="form-group">
                         <div class="form-line">
-                            @Html.EditorFor(Model => Model.Password, new { htmlAttributes = new { @class = "form-control", maxlength = "150", @required = "reguired" } })
+                            @Html.EditorFor(Model => Model.Password, new { htmlAttributes = new { @class = "form-control", maxlength = "150", @required = "reguired",@type="password"} })
 
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                     <div align="center">
                         <input type="submit" class="btn btn-success m-t-15 waves-effect" value="Yazar Kaydet">
                     </div>
-                  
+
                 }
             </div>
         </div>
