@@ -59,5 +59,15 @@ namespace Selcuk.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult Details(int? Id)
+        {
+            if (Id == null || Id == 0)
+            {
+                return HttpNotFound();
+            }
+            Author author = db.Author.Find(Id);
+            return PartialView(author);
+        }
     }
 }
